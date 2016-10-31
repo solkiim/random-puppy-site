@@ -1,0 +1,18 @@
+body {
+    margin: 0; 
+    padding: 0; 
+}
+#wrapper { 
+    width: 960px; 
+    margin: 0 auto; 
+}
+#video-controls {
+    margin: 0px auto;
+    width: 300px;
+    padding-top: 20px;
+}
+#video-controls i {
+    color: #96CDCD;
+    margin-left: 5px;
+    margin-right: 5px;
+}

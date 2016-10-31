@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Sol Kim</title>
+    
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="tubular.js"></script> 
+    <script>
+        $('document').ready(function() {
+            var options = { 
+                videoId: '1hYxUlDO6UE', 
+                start: 2, 
+                repeat: true,
+                width: $(window).width(),
+                playButtonClass: 'tubular-play',
+                pauseButtonClass: 'tubular-pause',
+                muteButtonClass: 'tubular-mute',
+                volumeUpClass: 'tubular-volume-up',
+                volumeDownClass: 'tubular-volume-down',
+                increaseVolumeBy: 10
+            };
+            $('#wrapper').tubular(options);
+        });
+    </script>
+</head>
+    
+<body>
+    <div id="wrapper" class="clearfix">
+		<div id="video-controls">
+            <a href="#" class="tubular-play"><i class="fa fa-play fa-4x"></i></a>
+            <a href="#" class="tubular-pause"><i class="fa fa-pause fa-4x"></i></a>
+            <a href="#" class="tubular-volume-down"><i class="fa fa-volume-down fa-4x"></i></a>
+            <a href="#" class="tubular-volume-up"><i class="fa fa-volume-up fa-4x"></i></a>
+            
+            <a href="#" class="tubular-mute"><i class="fa fa-volume-off fa-4x"></i></a>
+        </div>
+    </div>
+</body>
+</html>
